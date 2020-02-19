@@ -22,3 +22,4 @@ lxml==4.2.4
 python3 iidx_crawler.py iidx27
 ```
 `iidx27`の項目の引数は、config/config.jsonのkeyの名前。
+pullしたまま使用した場合、`player_data/sample.json`をもとに、各プレイヤーのレベル12のスコア取得を開始する。
