@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver import Chrome, ChromeOptions
 from selenium.webdriver.support.ui import Select
 from time import sleep
-from bs4 import BeautifulSoup
 import lxml.html
 import sys
 import json
@@ -86,7 +85,6 @@ class IIDXCrawler:
 
         sleep(1)
         self.screenshot('img/after_login.png')
-        logger.debug('login success.')
         self.is_login = True
         return
 
