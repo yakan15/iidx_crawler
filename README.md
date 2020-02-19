@@ -4,7 +4,7 @@
 selenium==3.14.0
 lxml==4.2.4
 ```
-また、Google Chrome及び対応する[ChromeDriver](chromedriver.chromium.org)が必要。  
+また、Google Chrome及び対応する[ChromeDriver](https://chromedriver.chromium.org)が必要。  
 
 ## ログイン設定
 `config/config.json`のID, Passwordには, 自分が使用するログインID, Passwordを記述する。
