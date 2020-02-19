@@ -39,6 +39,11 @@ class Target(Enum):  # クロールページの対象
 
 class IIDXCrawler:
 
+    '''
+    site_date : configから読み出したdict。
+    key : configのキー。
+    hedless : ブラウザの起動方式（デフォルト：ヘッドレス）
+    '''
     def __init__(self, site_data, key, headless=True):
         options = ChromeOptions()
         options.set_headless(headless=headless)
@@ -396,14 +401,18 @@ if __name__ == "__main__":
     try:
         crawler = IIDXCrawler(site, args[1])
         crawler.login()
-        # crawler.get_dani_id()
+
+        # crawler.get_dani_id() # 段位ページからid取得
+        # アリーナランキングからid取得
         # crawler.get_ranking_id(
         #     'arena', 'https://p.eagate.573.jp/game/2dx/27/p/ranking/arena/top_ranking.html?page=0&play_style=0&display=1')
+
         # print(crawler.get_player_data("29834714"))
         # crawler.get_all_player_data('ids/sample.json')
         with open("player_data/sample.json") as f:
             player_data = json.loads(f.read())
         # for i in range(1, 13):
+        # レベル別のプレイヤーデータを取得。以下の呼び出しだと12。
         crawler.from_level(player_data, 12)
     except:
         import traceback
