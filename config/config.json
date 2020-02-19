@@ -1,0 +1,30 @@
+{
+    "iidx": {
+        "top_url": "https://p.eagate.573.jp",
+        "login_data": {
+            "ID": "ID",
+            "PASS": "PASS",
+            "login_url": "https://p.eagate.573.jp/gate/p/login.html",
+            "ID_form": "//*[@id='KID']",
+            "pass_form": "//*[@id='pass']",
+            "submit_button": "//*[@id='login_info']/form/div[1]/div[3]/input"
+        },
+        "dani": [
+            "18"
+        ]
+    },
+    "iidx27": {
+        "top_url": "https://p.eagate.573.jp",
+        "login_data": {
+            "ID": "ID",
+            "PASS": "PASS",
+            "login_url": "https://p.eagate.573.jp/gate/p/login.html",
+            "ID_form": "/html/body/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div[3]/input",
+            "pass_form": "/html/body/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div[3]/input",
+            "submit_button": "/html/body/div[1]/div[1]/div[1]/div/div/div/div/div[2]/div[6]/div[2]/button"
+        },
+        "dani": [
+            "18"
+        ]
+    }
+}
